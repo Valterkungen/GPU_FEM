@@ -1,0 +1,22 @@
+default:
+  image: python:latest
+  cache: 
+    paths: 
+      - .cache/pip
+
+variables: 
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+test-python:
+  stage: test
+  only:
+    - merge_requests
+  script:
+    - pip install pytest
+    - pytest --junitxml=report.xml
+  artifacts:
+    when: always
+    paths:
+      - report.xml
+    reports:
+      junit: report.xml

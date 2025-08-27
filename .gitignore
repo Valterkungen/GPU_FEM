@@ -1,0 +1,44 @@
+# System files
+**/.DS_Store
+**/.DS_STORE
+**/__pycache__/
+**/.vscode/
+**/.idea/
+
+# Build artifacts
+**/build/
+**/dist/
+**/*.o
+**/*.so
+**/*.dylib
+**/app
+**/a.out
+
+# CUDA compilation
+**/*.ptx
+**/*.cubin
+
+# Python
+**/*.pyc
+**/*.pyo
+**/*.egg-info/
+**/venv/
+**/env/
+
+# Jupyter
+**/.ipynb_checkpoints/
+
+# Documentation
+**/docs/_build/
+
+# Temporary files
+**/tmp/
+**/temp/
+**/*~
+**/*.tmp
+**/*.swp
+**/*.swo
+
+# Performance profiling
+**/*.prof
+**/*.nvprof
